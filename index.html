@@ -4,71 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Head</title>
-    <!--<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />  -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <style>
-        /* 문서의 스타일을 정의 */
-        h1 {
-            background-color: red;
-            font-size: 40px;
-            line-height: 60px;
-        }
+    <title>Form</title>
+<head>
+    <body>
+        <form action="/login">
+        <fieldset>
+        <legend>필수 정보</legend>
+            <div>
+                <label for="login-id">아이디</label>
+                <input id="login-id" type="text" name="login_id" required placeholder="아이디를 입력해 주세요" />
+            </div>
+            <div>
+                <label for="login-pw">비밀번호</label>
+                <input id="login-pw" type="password" name="login_pw" required placeholder="비밀번호를 입력해 주세요"/>
+            </div>
+            <div>
+                <input id="login-auto" type="checkbox" value="yes" checked />
+                <label for="login-auto">자동 로그인</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>추가 정보</legend>
+            <input type="range" min="0" max="200" step="50" />
+            <input type="datetime" />
+            <input type="number" min="0" max="20" step="2"/>
+            <input type="tel" />
 
-
-    </style>
-
-</head>
-<body>
-    <h1>Heading 1</h1>
-
-
-    <img src="/assets/img/sample.jpg" width="1000" height="auto" alt="샘플 이미지">
-    
-
-    <table border="1">
-        <thead>
-            <tr>
-                <th>이름</th>
-                <th>설명</th>
-                <th>비고</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="2"> HTML</td>
-                <td>Hypertext Markup Languege</td>
-                <td>&nbsp;</td>
-    
-            </tr>
-            <tr>
-                <td colspan="2">CSS</td>
-            </tr>
-        </tr>
-        <tr>
-            <td colspan="3">Javascript</td>
-        </tr>
-        <tr>
-            <td rowspan="2"> HTML</td>
-            <td>Hypertext Markup Languege</td>
-            <td>&nbsp;</td>
-
-        </tr>
-        <tr>
-            <td colspan="2">CSS</td>
-        </tr>
-    </tr>
-    <tr>
-        <td colspan="3">Javascript</td>
-    </tr>
-    
-        
-
-
-
-
-         
-        </tbody>
-    </table>
-</body>
+            <input type="submit" value="로그인" />
+            <button type="submit">로그인</button>
+            <div>
+                <label>좋아하는 과일</label>
+                <div>
+                    <div>
+                        <input id="selection-1" type="radio" name="selection" value="사과" checked />
+                        <label for="selection-1">사과</label>
+                    </div>
+                    <div>
+                        <input id="selection-2" type="radio" name="selection" value="오렌지" />
+                        <label for="selection-2">오렌지</label>
+                    </div>
+                    <div>
+                        <input id="selection-3" type="radio" name="selection" value="딸기" />
+                        <label for="selection-3">딸기</label>
+                    </div>
+                    <div>
+                        <input id="selection-4" type="radio" name="selection" value="망고" />
+                        <label for="selection-4">망고</label>
+                    </div>
+                </div>
+            </div>
+            <label for="content">내용</label><br />
+            <textarea id="content" rows="4" placeholder="내용을 입력해 주세요">이름:
+            </fieldset>
+생일:</textarea><br>
+            <select>
+                <option value="0">사과</option>
+                <option value="1">오렌지</option>
+                <option value="2" disabled>딸기</option>
+                <option value="3" selected>망고</option>
+            </select>
+            <label for="upload-file">파일 선택</label>
+            <input id="upload-file" type="file" placeholder="업로드할 파일을 선택해 주세요" accept="image/*" />
+            <input type="file" placeholder="업로드할 파일을 선택해 주세요" accept="image/*" multiple />
+        </form>
+    </body>
 </html>
