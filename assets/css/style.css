@@ -1,10 +1,108 @@
-h1 {
-    padding:
-    background-color: black;
-    color:wheat;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 30px;
+body{
+    background-color: lightslategray;
+    background-color: rgb(139, 161, 161);
+    background-color: #544545;
+    background-color: #ccc;
+    margin: 0;
+    color: white;
+    color: rgba(255,255,255,0.5);
+    color: hsl(255, 100, 100);
+    color: hwb(0 0% 100% / 0.5)
+    font-size: 2em;
+    line-height: 1.5em;
+}
+/*기본 폰트 사이즈-16px*/
+/*16-100%=16=1em*/
+/*16-50%=8=0.5em*/
+/*16-200%=32=2em*/
+.box{
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    /*rem*/
+    font-size: 0.75rem;
+    line-height: 1.5rem
 
+}
+div.box{
+    width: 50%;
+    width: 50vw;
+    height: 400px;
+}
+p.box{
+    width: 500px;
+    height: 30vh;
+}
 
+.image {
+    width: 500px;
+    height: 500px;
+    background-image: url("/assets/img/sample.jpg");
+    background-image: url(/assets/img/sample.jpg);
+    
+    background-repeat: repeat;
+    background-repeat: no repeat;
+
+    background-position: 30%;
+    background-position:100px, -100px;
+    background-position: 50%,50%;
+
+    background-position: auto 500px;
+    background-size: cover;
+    background-size: contain;
+}
+
+.border{
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    /* border-width: 20px; */
+    border-style: solid;
+    border-color: white;
+
+    border-top-width: 5px;
+    border-right-width: 10px;
+    border-bottom-width: 15px;
+    border-left-width: 20px;
+
+    border-top-color: wheat;
+    border-right-color: tomato;
+    border-bottom-color: aqua;
+    border-left-color: #544545;
+    border-top-style: solid;
+    border-right-style: dotted;
+    border-bottom-style: double;
+    border-left-style: dashed;
+
+    border: 2px solid white;
+    border: none;
+    border-radius: 100px;
+    border-radius: 50%;
+    border-radius: 200px;
+
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+}
+
+.box-model{
+    width: 100%;
+    min-width: 400px;
+    max-width: 800px;
+    max-width: 500px;
+    height: 50vh;
+    min-height: 150px;
+    max-height: 300px;
+    /* min-width: 800px;
+    min-height: 800px; */
+    /* width: 300px;
+    height: 300px;  */
+    /* margin: 20px;
+    padding: 40px; */
+    background-color: white;
+    /* border: 10px solid transparent; */
+    color: #000000;
 }
