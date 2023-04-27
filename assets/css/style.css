@@ -1,185 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
-
-:root {}
-
 
 *{
     margin: 0;
     padding: 0;
 }
 
-body {
-    overflow-x : auto;
-    min-width: 300vh;
-    min-height: 200vh;
-    font-family: futurata-pt, sans-serif;
+img {
+    display: inline-block;
+    vertical-align: top;
 }
 
-header.header {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 60px;
-    background-color: rgb(0, 0, 0);
-    color: white;
+clear {
+    clear: both;
+    width: 0;
+    height: 0;
+}
+header#header {
+
 }
 
-header.header::before {
+header#header .gh-content {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1130px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+
+}
+
+
+header#header .speacial {
+    border-bottom: 1px solid #e4e8eb;
+}
+
+
+header#header .group {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+header#header .group nav.navigation {
+    float: left;
+}
+
+
+header#header .weather {
+    float: right;
+}
+
+header#header .group .content-area::after {
     content: '';
     display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-top: 2px solid red;
+    clear: both;
+    width: 0;
+    height: 0;
 }
 
-main.main {
-    position: relative;
-    display: block;
-    width: 200vw;
-    padding-top: 60px;
-    background-color: white;
-    min-height: 100vh;
-    box-sizing: border-box;
-    box-sizing: content-box;
-}
-
-main.main section.section {
-    /* height: 100vh; */
-    position: relative;
-    height: calc(100vh - 60px);
-}
-
-main.main section.section .box {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 500px;
-    height: 500px;
-    color: white;
-    background-color:cadetblue
-}
-
-.section-1 {
-    background-color: tomato
-}
-.section-2 {
-    background-color: orange;
-}
-.section-3 ul {
-    background-color: beige;
-
-}
-.section-3 > ul {
-    background-color: blueviolet;
-}
-
-.section-3 span + ul {
-    background-color: black;
-    color: white;
-}
-
-.section-3 > ul li + li {
-    background-color: rgb(193, 193, 193);
-}
-/* p + p {
-    background-color: red;
-} */
-
-
-
-/* p ~ p {
-    background-color: green
-} */
-/* + = 겹친 하위 */
-/* ~ = 본인 뒤에 모두 */
-
-ul li:first-child {
-    background-color: blue;
-}
-
-ul li:last-child {
-    background-color: red;
-}
-
-.section-3 > ul > li:nth-child(3n+1) {
-    background-color: aqua;
-}
-
-
-input.input {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 4px 10px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    transition: all 200ms ease-in-out;
-}
-input.input:focus {
-
-}
-input.input:focus-visible {
-    padding: 8px 20px;
-    outline: none;
-    border-color: red;
-    font-size: 40px;
-    line-height: 60px;
+#contents {
+    min-height: calc(100vh - 714px);
+    margin-right: auto;
+    margin-left: auto;
+    width: 1130px;
+    padding: 20px 30px;
 
 }
 
-input.input:read-only {
-    background-color: black;
-    color: white;
+#contents main#main {
+    float: left;
 }
 
-input.input:disabled {
-    background-color: grey;
-    opacity: 0.5;
+#contents aside#aside {
+    float:  right;
 }
 
-input.checkbox {
-    width: 10px;
-    height: 10px;
-}
-
-input.checkbox:checked {
-    background-color: aqua;
-    
-}
-
-input.checkbox:checked + span {
-    color: red;
-}
-
-main.main section.section:not(.section-3) {
-    background-color: white;
-    color: black;
-}
-
-/* 
-main.main section.section:not(p) {
-    background-color: white;
-    color: black;
-} */
-
-section.section::before {
-    /* content: '123456789'; */
+#contents::after {
     content: '';
     display: block;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
+    clear: both;
+    width: 0;
+    height: 0;
+}
+footer#footer {
+
+    background-color: #fafbfc;
+    border-top: 1px solid #e4e8eb;
 }
 
-section.section::after {
-    /* content: '123456789'; */
-    content: '';
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-}
+footer#footer .gf-comtent {
 
+    margin-right: auto;
+    margin-left: auto;
+    width: 1130px;
+    padding: 20px 30px;
